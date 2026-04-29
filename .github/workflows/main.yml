@@ -3,6 +3,11 @@ name: react-doctor
 on:
   pull_request:
 
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
 jobs:
   full-scan:
     runs-on: ubuntu-latest
