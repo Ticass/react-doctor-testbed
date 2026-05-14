@@ -23,7 +23,7 @@ jobs:
       - name: Run full scan
         id: scan
         continue-on-error: true                          # ← key fix: don't skip later steps if issues found
-        run: npx -y react-doctor-rewritten@0.2.6 . --hide-branding > report.html
+        run: npx -y react-doctor-rewritten@0.2.8 . --hide-branding > report.html
 
       - name: Upload report artifact
         uses: actions/upload-artifact@v4
@@ -55,7 +55,7 @@ jobs:
       - name: Run PR scan
         id: scan
         continue-on-error: true                          # ← same here
-        run: npx -y react-doctor-rewritten@0.2.6 . --hide-branding-pr > report.html
+        run: npx -y react-doctor-rewritten@0.2.8 . --hide-branding-pr > report.html
 
       - name: Upload report artifact
         uses: actions/upload-artifact@v4
