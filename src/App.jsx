@@ -10,6 +10,9 @@ import PropErrors from "./components/PropErrors";
 import SetStateInRender from "./components/SetStateInRender";
 import StaleClosures from "./components/StaleClosures";
 import UncontrolledMix from "./components/UncontrolledMix";
+import HookInLoop from "./components/HookInLoop";
+import InvalidDomNesting from "./components/InvalidDomNesting";
+import NestedComponent from "./components/NestedComponent";
 import "./App.css";
 
 const components = {
@@ -24,6 +27,9 @@ const components = {
   SetStateInRender,
   StaleClosures,
   UncontrolledMix,
+  HookInLoop,
+  InvalidDomNesting,
+  NestedComponent,
 };
 
 export default function App() {
